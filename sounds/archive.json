@@ -1,0 +1,29 @@
+[
+  {
+    "id": "field-recording-180817",
+    "title": "field recording",
+    "file": "field-recording.wav",
+    "date": "2017-08-18",
+    "location": "",
+    "weather": "",
+    "notes": ""
+  },
+  {
+    "id": "black-woodpecker",
+    "title": "black woodpecker",
+    "file": "woodpecker.wav",
+    "date": "",
+    "location": "",
+    "weather": "",
+    "notes": ""
+  },
+  {
+    "id": "bats-slowed-16x",
+    "title": "bats, slowed 16x",
+    "file": "bats-slowed.wav",
+    "date": "2014-08-03",
+    "location": "",
+    "weather": "",
+    "notes": "original recording slowed to 1/16 speed; trimmed excerpt (0:30-0:54 of source)"
+  }
+]
