@@ -1,4 +1,4 @@
-# SOUNDING HOME
+# SOUNDING HOME (artist statement)
 
 'Sounding Home' is my interactive digital archive and artistic synthesis
 combining my fieldwork and research in the form of a website. The aim is
