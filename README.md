@@ -63,11 +63,7 @@ relations for the production of conceptual soundscape compositions.
 **Sounding Home:**
 https://tessannetteeve-bo.github.io/Sounding-Home-interactive-digital-archive/
 
-**GitHub Repository:**
-https://github.com/tessannetteeve-bo/Sounding-Home-interactive-digital-archive
-
 ---
 
-For technical documentation on how the site is built, how to add sounds
-to the archive, and how to deploy changes, see
+For technical documentation see
 [`TECHNICAL.md`](TECHNICAL.md).
