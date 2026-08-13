@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sounding Home: an interactive digital sound archive</title>
+<meta name="description" content="Drag field recordings into a hand-drawn house. Position sets volume and reverb. Download your soundscape as a WAV and a JSON note.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="site-head">
+    <h1 class="site-title">
+      <img class="title-house-icon" src="assets/house.png" alt="">
+      Sounding Home
+    </h1>
+    <p class="tagline">an interactive digital sound archive</p>
+  </header>
+
+  <p class="intro-text">This archive is an artistic synthesis combining fieldwork and research about environmental sounds. The aim is to create a space where acoustic data in the form of an archive creatively engage you. The page is built as the result of a <a href="documents/protocol-for-future-field-recording-archivists.pdf" target="_blank" rel="noopener"><b>protocol</b></a> I have made for archiving and I want you to be able to explore the concept of 'being home' or 'building a habitat' through sound via an active participation, hence 'sound' becoming the verb 'sounding'.</p>
+
+  <p class="intro-text">You can drag any recording from my archive into the house and create your own soundscape composition. A small echoing Pocket of the world. When the audio files are dragged into the house you can choose between two parameters: <b>loudness</b> and <b>reverberation</b>. A sound placed <b>at the bottom is loud, on top it is quiet</b>. To the <b>left it will be with reverb</b> (distant) and to the <b>right the sound remains dry</b> (nearby). The sounding environment will become three-dimensional when multiple sounds are added, and the sounds begin to relate to each other.</p>
+
+  <p class="intro-text"><em>The experience is best with headphones.</em></p>
+
+  <p class="intro-text">On the bottom you may describe your soundscape composition and download it. The download will be a ZIP-file containing a 20 second audio file and a json with your description.</p>
+
+  <p class="intro-text"><b>Sounding home</b> is a symbiotic fusion between the act of archiving, habitat listening, the imagining of acoustic spaces and language exploration for environmental sounds.</p>
+
+  <div id="tapPrompt" class="tap-prompt" hidden>
+    <button class="stamp-btn" id="tapPromptBtn">tap to listen</button>
+  </div>
+
+  <!-- ARCHIVE -->
+  <section aria-label="Sound archive">
+    <h2>Archive</h2>
+    <div id="archiveList" class="archive-list"></div>
+  </section>
+
+  <!-- POCKET BUILDING -->
+  <section aria-label="Mixing house">
+    <h2>Pocket Building</h2>
+    <p class="section-text">drag a sound into the house - max. 3</p>
+
+    <div class="house-panel">
+      <div class="house-svg-wrap" id="houseWrap">
+        <img class="house" src="assets/house.png" alt="a hand-drawn house" draggable="false">
+        <div class="dropzone" id="dropzone" style="left:14%; right:16%; top:20%; bottom:11%;"></div>
+      </div>
+    </div>
+    <p class="slots" id="slotStatus">0 / 3 sounds placed</p>
+  </section>
+
+  <!-- FEEL(D) NOTES -->
+  <section aria-label="Describe and export">
+    <h2>Feel(d) Notes</h2>
+    <label for="description">What do you hear? What do you feel? What imaginary world reveals itself? Describe your soundscape composition</label>
+    <textarea id="description" placeholder="…"></textarea>
+
+    <div class="mix-readout" id="mixReadout"></div>
+
+    <div class="controls">
+      <button class="stamp-btn" id="downloadBtn" disabled>download composition</button>
+    </div>
+    <p class="status-line" id="statusLine"></p>
+  </section>
+
+  <footer class="site-foot">
+    <span>Sounding Home — open source, static, no backend, no tracking.</span>
+    <span><a href="https://github.com/" target="_blank" rel="noopener">source on GitHub</a> · MIT licensed</span>
+  </footer>
+
+</div>
+
+<script src="js/wav-encoder.js"></script>
+<script src="js/zip-encoder.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
