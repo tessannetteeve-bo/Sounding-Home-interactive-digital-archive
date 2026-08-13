@@ -11,21 +11,14 @@ others), and so I want visitors to be able to reflect on the topic of a
 home trough sound via proactive participation. Hence, 'sound' becoming
 the verb 'sounding'.
 
-The website is opensource, meaning that anyone can read the code and all
-of the data is available for viewing. Data about the recordings that
-isn't displayed on the website itself may be viewed in the GitHub
-Repository in the `sounds/archive.json` file. I opted for GitHub Pages
-exactly for this opensource approach and the fact that it is a free page
-publisher. Paying for a website would have discouraged me to create a
-sustainable trajectory. Working with GitHub also permits me to learn
-about coding, which I will be studying next year.
-
 When you visit the website on top there's a text explaining how the
 archive should be interpreted and what the goal is, along with
 instructions. Next is the collection of recordings, which I call my
 'Archive', where sounds are labeled with the location of recording and
 the subject. To make the recordings compliant with GitHub's limits I have
-often cut out a certain segment.
+often cut out a certain segment. Data about the recordings that
+isn't displayed on the website itself may be viewed in the GitHub
+Repository in the `sounds/archive.json` file.
 
 Under the 'Archive' is the interactive part 'Pocket Building', where you
 can drag recordings from my archive into the drawn house and create your
